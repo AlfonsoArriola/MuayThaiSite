@@ -6,6 +6,7 @@
     <link rel="canonical" href="/article.html">
 
     <title>My Muay Thai Adventure</title>
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 
     <style amp-custom>
       
@@ -13,13 +14,25 @@
               background-color: powderblue;
             }
             amp-img {
-              background-color: gray;
-              border: 1px solid black;
+            }
+
+            amp-img.cover img{
+              object-fit:cover;
             }
 
             .intro{
                padding: 2rem;
             }
+
+             .fixed-container {
+               position: relative;
+               width: 15.5rem;
+               height: 15.5rem;
+               float: right;
+               padding: 1rem;
+             }
+
+
     </style>
 
     <script type="application/ld+json">
@@ -50,25 +63,75 @@
     <amp-img src="images/view.jpeg" layout="responsive" alt="Welcome" height="400" width="800"></amp-img>
 
     <div class="intro">
-                  <h2> When I knew It was time to leave for Thailand.</h2>
+                  <h2> Once upon a time, I bought a one way ticket to Thailand. </h2>
 
-        <p> Standing outside a bar in Lower Manhattan, my fists tight, waiting for the guy I called out to fight to face me. Black, like I was, and just as tall, it would had been a fair fight. I waited, but the only person who came out was his friend and co-worker, who was White.  Why do the races matter? Because the White guy called me "nigga" and what was a goodnight went downhill pretty quick. 
-        </p>
+                  <p>  At 19, I left NYC for the first ever and joined the Navy. At 25, I then joined the Army, and I came back to NYC at 28, studying at Fordham University.  </p>
 
-          <br>
+   <!--  <amp-img src="images/navy.jpg" layout="responsive" alt="Welcome" height="4" width="8"></amp-img>
+    <amp-img src="images/army.jpg" layout="responsive" alt="Welcome" height="4" width="8"></amp-img>
+    <amp-img src="images/painting.jpg" layout="responsive" alt="Welcome" height="4" width="8"></amp-img>
+ -->
+       <!--  <amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox> -->
+                                <!-- Captions via figcaption -->
+                                <!-- figure>
+                                  <amp-img on="tap:lightbox1"
+                                      role="button"
+                                      tabindex="0"
+                                      src="images/navy.jpg"
+                                      layout="responsive"
+                                      width="30" height="24"></amp-img>
+                                  <figcaption> Navy. </figcaption>
+                                </figure> -->
+
+                                <!-- Captions via aria-describedby -->
+                                <!-- <div>
+                                  <amp-img on="tap:lightbox1"
+                                      role="button"
+                                      tabindex="0"
+                                      src="images/army.jpg"
+                                      aria-describedby="Close"
+                                      layout="responsive"
+                                      width="300" height="246"></amp-img>
+                                   <div id="imageDescription"> Army</div>
+                                </div> -->
+                 
 
 
-          <p> Their names escape me, but for now let's call the White guy Paul, since he looked just like Paul Wall.  Paul actually meant it with love, but I wasn't having it, for so many reasons, and when I told him that, Paul apologized.  We were cool, though his Black friend wasn't having it.  Again, despite how long we talked and drank before things got tense, I forgot the Black dude's name, so we'll call him Ham, since he's an idiot, and in my recollection, looks like a 220 pound bag of hamburger helper. </p>
+              <!--    <div class="flex">
+                    <div class="fixed-container m1">
+                      <amp-img class="cover" 
+                        on="tap:lightbox1"
+                        role="button"
+                        tabindex="0"
+                        aria-describedby="imageDescription"
+                        layout="fill"
+                        src="images/navy.jpg"
+                        
+                        <div id="imageDescription"> Navy </div>
+                      </amp-img>
+                    </div>
+                    <div class="fixed-container m1">
+                      <amp-img class="cover"
+                        on="tap:lightbox1"
+                        role="button"
+                        tabindex="0"
+                        aria-describedby="imageDescription"
+                        layout="responsive"
+                        src="images/army.jpg"
+                        width="300" height="300"> 
+                        <div id="imageDescription"> Army </div>
+                      </amp-img>
+                    </div>
+                    <div class="fixed-container m1">
+                      <amp-img class="cover"
+                        layout="fill"
+                        src="images/painting.jpg"></amp-img>
+                    </div>
+                  </div> -->
 
-          <br>
 
-          <p> "You're just gonna disrespect my boy after all the love he showed you?" Ham had said, getting more worked up as he went on.  Shocked, I left the bar, thinking about just how ridiculous things had gotten, and sadly, I was gonna make it worse.  Staying away would had been the smart thing, but that option left a while ago; in the arms race of doing dumb shit, Ham was gonna be Iraq, and I was gonna be the U.S.</p>
 
-          <br>
-
-           <p>The irony of the fact that I was gonna maul another Black person in the the highly gentrified neighborhood because I refused to let his White friend call me a nigga,my nigga, a nigger or any varition of word, is not lost on me, but I was beyond mad, beyond even reason....at least for a while.  For good while, Ham never stepped outside the bar while Paul tried to talk me out of it.  Eventually, I walked away, again, and for good.  This was just one more thing, on top of so many things; from the subtle to no to subtle racism of Manhattan that my friends, family, and I deal with, failing school, my alcoholic father, and my dangerously following his footsteps, I knew I had to change.  Something had to change, I had to change, and to do that, I had to go. </p>
-
-              <p><h2> Next Chapter: Ong Bak or Eat, Pray, Love </h2></p>
+              <p><h2> Next Chapter: When I knew it was time to leave. </h2></p>
       
     </div>
   </body>
